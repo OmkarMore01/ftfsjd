@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+  <h1 class="head1">Hello i am heading </h1>
+  <img src="./images/car1.jpeg" alt="">
+  <img src="./images/car2.jpeg" alt="">
+  <script>
+    //what is the difference between let var and const keyword..?
+    /**
+     * let ==> it cannot be redeclare but we can chnage its values...  eg
+     * let a=20  ✅
+     * let a=30  ❌
+     * a=90  ✅
+     * var==> it can be redeclare and redefine  eg
+     * var a=20  ✅
+     * var a=30  ✅
+     * a=90  ✅
+     * 
+     * const==> It cannot be redeclared and redefined
+     * const a=90 ✅
+     * a=80 ❌
+     * const a=87 ❌
+     * */
+//What is array==> 
+// It holds multiple values inside a single name 
+// It is Collection of homogenous or heterogenous type of elements..
+//Homogenous==>similar datatype 
+//Heterogenous ==> different datatype eg==> str,int,float
+
+let ar=[1,2,3,4,5,6,7,8,9]
+console.log("Array after slicing")
+
+console.log(ar.slice(0,8))
+
+localStorage.setItem("Username","Omkar")
+localStorage.setItem("Password","om@123")
+
+console.log("Hello"+localStorage.getItem("Username"))
+  </script>
+</body>
+</html>
