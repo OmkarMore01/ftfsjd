@@ -68,9 +68,36 @@ const cars=['Indica','nano','Safari','Alto']
 //const [c1,c2,c3,c4]=cars
 //const[x1,,x2,]=cars
 
-const [c1,c2,...c3]=cars
+// const [c1,c2,...c3]=cars
+/*
+Class==> it is a imaginary entity 
+    ==> is the blueprint for creation of object
+Object==> it is a real world enetity
 
+*/
+let students={
+  name:'Abhijeeth'
+  ,age:22
+  ,surname:'Mujmule'
+}
+console.log(students.age)
+console.log(students.name)
+let fruits={
+  name:'apple'
+  ,price:98
+}
+console.log(fruits.name)
+console.log(fruits.price)
+//Object destructuring
+fname=fruits.name
+console.log(fname)
 
+let{
+  name,
+  price:pr,
+  company="Kashmir"
+}=fruits
+console.log(pr)
   </script>
 </body>
 </html>
