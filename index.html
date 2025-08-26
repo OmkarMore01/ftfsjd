@@ -7,100 +7,66 @@
 </head>
 <body>
   <script>
-    /*
-    */
-   
- 
-    // class Student
-    // {
-    //   name="ShivSai"
-    //   m1()
-    //   {
-    //     console.log(10+10)
-    //   }
-    //   greet()
-    //   {
-    //     console.log("Good night...")
-    //   }
-    // }
-
-    // st=new Student()
-    // st.m1()
-    // st.greet()
-    // console.log(st.name)
-//wap to accept 2 numbers as a input from user perform addition and print result on console..
-// class Calculate
-// {
-//   accept()
+   //Pillars of OOPS
+   /*
+   inheritance ==>Properties(methods) and behaviour(variable) of parent class aquired in child class is known as inheritance..
+   */
+//   class Car
 //   {
-//     let a=parseInt(prompt("Enter first Number"))
-//    let b=parseInt(prompt("Enter second Number"))
-//    let sum=a+b
-//     console.log("Addition of 2 numbers are "+sum)
+//     company()
+//     {
+//       console.log("Hii i am method of car class...")
+//     }
+//     color()
+//     {
+//       console.log("hii i am xcolor")
+//     }
 //   }
-
-// }
-// cl=new Calculate()
-// cl.accept()
-
-//constructor
-/*
-    It is a special type of method which get automatically called when the object is created..
-    no need to call constrcutor explicitely
-    we cannot create multiple constructor only one constructor is allowed 
-    There are 2 types of constructor
-    1 Default constructor..
-    2 Parameterised constructor..
-*/
-// class Car
-// {
- 
-//   constructor()
+//   //    child         Parent
+//   class Verna extends Car
 //   {
-//     console.log("Hello I am Car")
+//     model()
+//     {
+//       console.log("Hi i am model methods")
+//     }
 //   }
-//   disp()
-//   {
-//     console.log("I am disp method...")
-//   }
-// }
-// cr=new Car()
-// cr.disp()
-
-
-// class Animal
-// {
- 
-//   constructor(name)
-//   {
-//     console.log("Hello "+name)
-//   }
-//   disp()
-//   {
-//     console.log("I am disp method...")
-//   }
-// }
-// an=new Animal("FutureTech")
-// an.disp()
-
-//This ==> this referes current object
+// v=new Verna()
+// v.company()
+// v.model()
+// v.color()
 
 class Animal
 {
- 
-  constructor(name)
+  eat()
   {
-    this.name=name
-    console.log("Hello "+this.name)
+    console.log("Hi i am Eat")
   }
-  disp()
+  drink()
   {
-    console.log("I am disp "+this.name)
+console.log("Hi i am Drink")
+  }
+  sound()
+  {
+console.log("Hi i am Sound")
   }
 }
-an=new Animal("Sai")
-an.disp()
+class dog extends Animal
+{
+  run()
+  {
+    console.log("Hi i am run")
+  }
+}
+d=new dog()
+d.eat()
+d.sound()
+d.drink()
+d.run()
 
+a=new Animal()
+a.sound()
+a.drink()
+a.eat()
 
 
   </script>
