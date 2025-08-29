@@ -4,32 +4,43 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body>
+  <button class="btn btn-success m-5" onclick="f1()">Click </button>
+    <button class="btn btn-info m-5" ondblclick="f2()">Double Click</button>
+    <button class="btn btn-primary m-5" onmouseenter="f3()">MouseEnter</button>
+     <button class="btn btn-danger m-5" onmouseleave="f4()">MouseLeave</button>
+     <button class="btn btn-secondary" onmouseout="f5()">MouseOut</button>
   <script>
+    
     /**
-     * String==> Collection of characters..
-     * eg "sai","Mohan",'Siddharth'
+     * Events
+     * Mouse Events
+     * 1 onClick
+     * 2 ondblClick
+     * 3 onMouseOver
+     * 4 onMpouseOut
+     * 
     */
-//way to create a string
-// let s1='sai'
-// let s2="sai"
-// let s3=`sai`
-// let s4=new String("Sidhi")
-// console.log(typeof(s3))
-// console.log(typeof(s1))
-// console.log(typeof(s2))
-// console.log(typeof(s4))
-// //String Interpolation
-// let name="Ganpati"
-// console.log("Hello "+name)
-// console.log(`Hello ${name}`)
-// let a=90
-// let b=10
-// let c=a+b
-// console.log(`Addition of ${a} and ${b} is == ${c}`)
-// let nm="good night"
-// console.log(nm.length)
+   function f1(){
+    alert("Hi button is clicked...")
+   }
+   function f2(){
+    alert("Hi button is double clicked...")
+   }
+   function f3(){
+    alert("Hi Mouse is enteered on button...")
+   }
+   function f4(){
+    alert("Hi Mouse is leave from button...")
+   }
+   function f5(){
+    alert("Hi mouse is out from button...")
+   }
+   function f6(){
+    alert("Hi button is double clicked...")
+   }
   </script>
 </body>
 </html>
