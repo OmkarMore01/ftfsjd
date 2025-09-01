@@ -7,40 +7,15 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body>
-  <button class="btn btn-success m-5" onclick="f1()">Click </button>
-    <button class="btn btn-info m-5" ondblclick="f2()">Double Click</button>
-    <button class="btn btn-primary m-5" onmouseenter="f3()">MouseEnter</button>
-     <button class="btn btn-danger m-5" onmouseleave="f4()">MouseLeave</button>
-     <button class="btn btn-secondary" onmouseout="f5()">MouseOut</button>
+  <p id="para">this is info</p>
+  <button class="btn btn-info" onclick="ct()">change Text</button>
   <script>
-    
-    /**
-     * Events
-     * Mouse Events
-     * 1 onClick
-     * 2 ondblClick
-     * 3 onMouseOver
-     * 4 onMpouseOut
-     * 
-    */
-   function f1(){
-    alert("Hi button is clicked...")
-   }
-   function f2(){
-    alert("Hi button is double clicked...")
-   }
-   function f3(){
-    alert("Hi Mouse is enteered on button...")
-   }
-   function f4(){
-    alert("Hi Mouse is leave from button...")
-   }
-   function f5(){
-    alert("Hi mouse is out from button...")
-   }
-   function f6(){
-    alert("Hi button is double clicked...")
-   }
+    function ct()
+    {
+      let p=document.getElementById('para')
+      p.innerText="Hello Students How are you ?"
+      p.classList.add('text-center','bg-info-subtle')
+    }
   </script>
 </body>
 </html>
