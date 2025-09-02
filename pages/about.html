@@ -4,8 +4,22 @@
     
     <link rel="stylesheet" href="./../css/index.css">
 </head>
-<body>
+<body id="bd">
     <h1 class="head1">Hi i am about page</h1>
     <img src="./../images/car2.jpeg" alt="">
+   <span id="mode-text"> Dark Mode</span> <img id="modeimg" onclick="bt()" class="img" src="./../images/idea.png" alt="Image not found">
+
+   <script>
+    function bt()
+    {
+        bd=document.getElementById('bd')
+        mt=document.getElementById('mode-text')
+        mi=document.getElementById('modeimg')
+        mt.innerText="Light Mode"
+        mt.style.color='cyan'
+        bd.style.backgroundColor='black'
+        mi.src='./../images/idea (1).png'
+    }
+   </script>
 </body>
 </html>
